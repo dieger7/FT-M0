@@ -59,16 +59,14 @@ text-align: center;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 
 
 
 /* Ejercicio 6. */
 
-#ejercicioSeis {
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row-reverse;
-}
