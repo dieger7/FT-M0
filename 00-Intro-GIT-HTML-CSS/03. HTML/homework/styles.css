@@ -1,3 +1,4 @@
 img {width:400px;}
-#thirdDiv {height: 600px; width: 500px; background-color: blueviolet; padding: 50px; border-style: double; border-width: 20px;}
+#thirdDiv {height: 600px; width: 500px; background-color: blueviolet; padding: 50px; border-style: double; border: solid 10px; color: springgreen;}
 #spanId {font-size: 18px; margin: 50px;}
+
