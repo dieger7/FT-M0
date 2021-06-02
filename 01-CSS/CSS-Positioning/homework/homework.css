@@ -41,8 +41,9 @@ text-align: center;
 
 #ejercicioCuatro {
     
-   position: absolute;
+   position: fixed;
    top: 0px;
+   left: 0px;
    
     
 
@@ -55,10 +56,6 @@ text-align: center;
 /* Acá va tu código */
 
 #ejercicioCinco {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
     display: flex;
     justify-content: space-around;
     align-items: center;
