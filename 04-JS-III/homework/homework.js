@@ -3,18 +3,21 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
   // Tu código:
+  return(array[0])
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  return(array[array.length -1])
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  return(array.length)
 }
 
 
@@ -23,6 +26,12 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var j = [];
+  for(var i = 0; i < array.length; i++) {
+    j[i] = array[i] + 1;
+  }
+
+  return j;
 }
 
 
@@ -30,6 +39,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+ array.push(elemento);
+  return(array)
 }
 
 
@@ -38,6 +49,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array.unshift(elemento);
+  return(array)
 }
 
 
@@ -47,14 +60,20 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  
+  return palabras.join(" ")
 }
+
 
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+
+    return array.includes(elemento)
 }
+
 
 
 function agregarNumeros(numeros) {
@@ -97,8 +116,15 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
+  if (numeroDeDia === 1 || numeroDeDia === 7)
+  {
+  return "Es fin de semana"
+  }
+  else 
+    return "Es dia Laboral"
+  }
   
-} 
+
 
 
 function empiezaConNueve(n) {
