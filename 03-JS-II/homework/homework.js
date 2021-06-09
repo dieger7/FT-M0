@@ -210,11 +210,15 @@ function operadoresLogicos(num1, num2, num3) {
   } 
   else if (num1 > num2 && num1 > num3)
   {
-    return "Numero 1 es mayor y positivo"
+    return "Número 1 es mayor y positivo"
   }
   else if (num3 > num1 && num3 > num2)
   {
-    return 
+    return num3 + 1
+  }
+  else 
+  {
+    return false
   }
 }
 
@@ -280,7 +284,16 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-}
+  var j = 0;
+  
+  do {
+    numero = numero + 5;
+    j++;
+  } while (j < 8);
+  {
+    return numero;
+  }
+  } 
 
 
 // No modificar nada debajo de esta línea
